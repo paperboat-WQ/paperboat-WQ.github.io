@@ -1,0 +1,91 @@
+---
+---
+@import "minima";
+
+/* 页面整体：淡灰底 + 更清楚的中文 */
+body {
+  background: #f6f8fb;
+  color: #303641;
+  font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+/* 顶栏 */
+.site-header {
+  background: #ffffff;
+  border-top: 3px solid #2b6cb0;
+  border-bottom: 1px solid #e5eaf1;
+}
+.site-title,
+.site-title:visited {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  color: #1f3f66;
+}
+.site-nav .page-link { color: #55617a; }
+
+/* 正文：一张干净的白纸 */
+.page-content { padding: 28px 0 36px; }
+.page-content > .wrapper {
+  background: #ffffff;
+  border: 1px solid #e5eaf1;
+  border-radius: 10px;
+  padding: 34px 42px;
+}
+
+/* 标题与日期 */
+h1, .post-title, .page-heading {
+  color: #1f3f66;
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: .3px;
+}
+.post-header { margin-bottom: 22px; }
+.post-title {
+  padding-bottom: 14px;
+  border-bottom: 2px solid #eef2f8;
+}
+.post-meta { color: #8b96a9; font-size: 14px; }
+.post-content p { margin: 0 0 1.15em; }
+
+/* 链接 */
+a, a:visited { color: #2b6cb0; }
+a:hover { color: #1a4d80; text-decoration: underline; }
+
+/* 首页文章列表：每条一张淡卡片 */
+.home .post-list { list-style: none; margin-left: 0; }
+.home .post-list > li {
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  border: 1px solid #e8edf4;
+  border-radius: 8px;
+  background: #fcfdff;
+}
+.home .post-list > li:hover { border-color: #c5d9f1; background: #f6faff; }
+.home .post-link { font-size: 18px; font-weight: 600; color: #1f3f66; }
+.home .post-list-heading { color: #1f3f66; }
+
+/* 页脚 */
+.site-footer {
+  background: #ffffff;
+  border-top: 1px solid #e5eaf1;
+  color: #8b96a9;
+}
+.site-footer a { color: #55617a; }
+
+/* 代码不受中文字体影响 */
+pre, code, kbd { font-family: Consolas, "Courier New", monospace; }
+
+/* 手机上不要大留白 */
+@media screen and (max-width: 600px) {
+  .page-content { padding: 12px 0 20px; }
+  .page-content > .wrapper {
+    padding: 22px 18px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+  .post-title, h1, .page-heading { font-size: 23px; }
+}
